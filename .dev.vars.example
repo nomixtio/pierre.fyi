@@ -1,0 +1,6 @@
+# Backend (Cloudflare Worker) — copy to `.dev.vars`
+# Used by `npm run cf:preview` / `wrangler dev`. These values stay server-side
+# and are never sent to the browser. In production, use `wrangler secret put`.
+CONTACT_TO_EMAIL=you@example.com
+TURNSTILE_HOSTNAMES=localhost,127.0.0.1
+# TURNSTILE_SECRET=set via Cloudflare dashboard or `wrangler secret put TURNSTILE_SECRET`

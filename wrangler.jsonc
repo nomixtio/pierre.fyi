@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pierre-fyi",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-08-01",
+  "vars": {
+    "TURNSTILE_HOSTNAMES": "pierre.fyi",
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAEHB3Ta6bvqZwZcm"
+  },
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "remote": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  }
+}

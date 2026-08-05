@@ -1,0 +1,24 @@
+{
+  "name": "pierre-bourven",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "wrangler types && tsc -p tsconfig.json && tsc -p tsconfig.worker.json && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "cf:preview": "npm run build && wrangler dev"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260804.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "wrangler": "^4.118.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
