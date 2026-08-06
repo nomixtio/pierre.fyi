@@ -207,3 +207,34 @@ body {
 #contact-status.is-error {
   color: var(--color-rose-400);
 }
+
+.project-meta-link {
+  color: var(--color-slate-500);
+  transition: color 0.2s ease;
+}
+
+.project-meta-link:hover {
+  color: var(--color-cyan-300);
+}
+
+.project-icon-link {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid --alpha(var(--color-white) / 10%);
+  background: --alpha(var(--color-white) / 4%);
+  color: var(--color-slate-400);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-icon-link:hover {
+  border-color: --alpha(var(--color-cyan-400) / 30%);
+  background: --alpha(var(--color-white) / 8%);
+  color: var(--color-cyan-300);
+}
