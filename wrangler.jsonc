@@ -3,6 +3,8 @@
   "name": "pierre-fyi",
   "main": "src/worker.ts",
   "compatibility_date": "2026-08-01",
+  "workers_dev": false,
+  "preview_urls": false,
   "vars": {
     "TURNSTILE_HOSTNAMES": "pierre.fyi",
     "TURNSTILE_SITE_KEY": "0x4AAAAAAEHB3Ta6bvqZwZcm"
